@@ -43,7 +43,7 @@ class Paddle:
     def __init__(self, canvas, color):
         self.canvas = canvas
         self.id = canvas.create_rectangle(0, 0, 300, 30, fill=color)
-        self.canvas.move(self.id, 150, 800)
+        self.canvas.move(self.id, 100, 650)
         self.x = 0
         self.canvas_width = self.canvas.winfo_width()
         self.canvas.bind_all('<KeyPress-Left>', self.turn_left)
